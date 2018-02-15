@@ -1,0 +1,16 @@
+<div class="center jumbotron">
+
+  <h2>Bienvenue sur le générateur de tweets</h2>
+
+  <%= form_for :tweet do |f| %>
+
+    <div class="field">
+      <%= f.label :Ton_tweet %><br />
+      <%= f.text_field :content, class: 'form-control' %>
+    </div>
+    </br>
+    <div class="actions">
+      <%= f.submit "Je balance !", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
